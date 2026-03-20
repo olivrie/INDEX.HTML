@@ -1,0 +1,242 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    background: hsl(0, 0%, 100%);
+    color: #333;
+    font-weight: lighter ;
+}
+
+header {
+    width: 100%;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 40px 0 40px;
+    background: #fff;
+}
+
+.logo {
+    height: 48px;
+}
+
+nav {
+    flex: 1;
+    margin-left: 40px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 18px 28px 18px 28px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 4px solid transparent;
+    transition: background 0.2s, color 0.2s, border-bottom 0.2s;
+}
+
+.nav-menu li a:hover {
+    background: #2196f3;
+    color: #fff;
+    border-bottom: 4px solid #2196f3;
+}
+.nav-menu li a.active {
+    background: #2196f3;
+    color: #fff;
+    border-bottom: 4px solid #2196f3;
+}
+
+.header-banner {
+    background: #444;
+    color: #fff;
+    text-align: center;
+    padding: 36px 10px 36px 10px;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto); 
+    gap: 20px; 
+    padding: 40px;
+    background-color: #fff;
+}
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 20px;
+}
+
+.feature img {
+    width: fit-content;
+    height: fit-content;
+}
+
+.feature caption {
+    width: fit-content;
+}
+
+.feature caption h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.feature caption p{
+    font-size: 0.97rem;
+    color: #444;
+    margin: 0;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    background: #fcfdeb;
+    padding: 36px 40px;
+    margin: 0;
+    border: 1px solid #f2f2f2;
+}
+
+.stat {
+    flex: 1 1 50%;
+    min-width: 180px;
+    max-width: 50%;
+    background: #fffde7;
+    margin: 0 10px;
+    text-align: center;
+    padding: 24px 0;
+    border: 1px solid #f3f3e7;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border-color: #9f9f00; ;
+}
+
+.stat img {
+    height: fit-content;
+    margin-bottom: 10px;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #888;
+    margin-top: 6px;
+}
+
+.team {
+    padding: 48px 40px 60px 40px;
+    background: #fff;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+}
+
+.team-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured-posts {
+    align-self: flex-start;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.posts {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.post {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    width: 230px;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    transition: box-shadow 0.2s;
+}
+
+.post:hover {
+    box-shadow: 0 4px 16px rgba(33,150,243,0.08);
+}
+
+.post figure {
+    margin: 0;
+    position: relative;
+}
+
+.post img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.post-date {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    color : gray;
+    font-size: 0.85rem;
+    padding: 4px 10px;
+    border-radius: 2px;
+}
+
+.post h4 {
+    margin: 16px 16px 8px 16px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.post p {
+    margin: 0 16px 16px 16px;
+    font-size: 0.97rem;
+    color: #444;
+}
+
